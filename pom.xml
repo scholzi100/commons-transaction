@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-parent</artifactId>
-    <version>14</version>
+    <version>28</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>commons-transaction</groupId>
@@ -174,7 +174,15 @@
     <commons.binary.suffix></commons.binary.suffix>
     <commons.jira.id>TRANSACTION</commons.jira.id>
     <commons.jira.pid>12310493</commons.jira.pid>
-  </properties> 
+  </properties>
+
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <name>Apache Commons Site</name>
+      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-transaction/</url>
+    </site>
+  </distributionManagement>
 
   <build>
     <sourceDirectory>src/java</sourceDirectory>
